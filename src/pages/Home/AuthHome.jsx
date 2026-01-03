@@ -1,7 +1,7 @@
 import React from "react";
-import { FaUserPlus, FaUser, FaCheckCircle } from "react-icons/fa";
+import { FaUserPlus, FaSignInAlt, FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import "./AuthHome.css";
+import "./authHome.css";
 
 const AuthHome = () => {
   const navigate = useNavigate();
@@ -36,7 +36,6 @@ const AuthHome = () => {
         <div className="right-panel">
           <h1>Welcome to Curatal!</h1>
 
-          {/* SIGN IN CARD */}
           <div className="auth-card">
             <div>
               <h3>Let’s Dive Back In!</h3>
@@ -44,11 +43,10 @@ const AuthHome = () => {
             </div>
 
             <button onClick={() => navigate("/auth/recruiter/login")}>
-              <FaUser /> Sign In
+              <FaSignInAlt /> Sign In
             </button>
           </div>
 
-          {/* SIGN UP CARD */}
           <div className="auth-card light">
             <div>
               <h3>New Here?</h3>
