@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUserPlus, FaSignInAlt, FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import "./authHome.css";
+import "./AuthHome.css";
 
 const AuthHome = () => {
   const navigate = useNavigate();
