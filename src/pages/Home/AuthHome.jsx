@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserPlus, FaSignInAlt, FaCheckCircle } from "react-icons/fa";
+import { FaUserPlus, FaUser, FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./authHome.css";
 
@@ -43,7 +43,7 @@ const AuthHome = () => {
             </div>
 
             <button onClick={() => navigate("/auth/recruiter/login")}>
-              <FaSignInAlt /> Sign In
+              <FaUser /> Sign In
             </button>
           </div>
 

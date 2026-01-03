@@ -2,6 +2,7 @@ import React from "react";
 import { FaUserPlus, FaUser, FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
+
 const AuthHome = () => {
   const navigate = useNavigate();
 
