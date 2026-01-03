@@ -1,0 +1,154 @@
+.footer {
+  background: #f9fbfd;
+  color: #374151;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* GRID */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.footer p,
+.footer li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer li:hover {
+  color: #2563eb;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* CONTACT */
+.footer-contact {
+  border-top: 1px solid #e5e7eb;
+}
+
+.certifications {
+  margin-top: 16px;
+}
+
+.certifications img {
+  height: 40px;
+  margin-right: 12px;
+}
+
+/* SOCIAL */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 20px;
+  color: #2563eb;
+  padding-bottom: 20px;
+}
+
+.footer-social svg {
+  cursor: pointer;
+}
+
+.footer-social svg:hover {
+  color: #1d4ed8;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 13px;
+}
+
+.footer-bottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.footer-bottom span {
+  cursor: pointer;
+}
+
+.footer-bottom span:hover {
+  color: #2563eb;
+}
+
+.footer-bottom img {
+  height: 14px;
+}
+
+/* SCROLL TOP */
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #77a0f9;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top:hover {
+  background: #1d4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover {
+  color: #2563eb;
+}
+.footer h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}

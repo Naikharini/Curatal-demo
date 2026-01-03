@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -250px;
+  width: 850px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: grid;
+}
+
+.dropdown-menu h4 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}

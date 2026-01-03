@@ -1,15 +1,17 @@
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import AuthHome from "./pages/AuthHome";
-import Footer from "./components/Footer/Footer";
- 
+import AppRoutes from "./routes/AppRoutes";
+import Footer from "./components/Footer/footer";
+
+
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <AuthHome />
+      <AppRoutes />
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
- 
+
 export default App;

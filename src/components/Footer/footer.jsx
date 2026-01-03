@@ -1,15 +1,20 @@
 import React from "react";
+import "./footer.css";
+import { Link } from "react-router-dom";
 import isoPortal1 from "../../assets/isoPortal1.png";
 import isoPortal2 from "../../assets/isoPortal2.png";
-
+import whatsapplogo from "../../assets/whatsapplogo.png"; 
 import {
+  FaWhatsapp,
   FaLinkedin,
+  FaYoutube,
   FaFacebook,
   FaInstagram,
-  FaYoutube,
-  FaWhatsapp,
+  FaQuora,
   FaArrowUp,
 } from "react-icons/fa";
+
+import { FaXTwitter, FaMedium, FaReddit } from "react-icons/fa6";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -57,14 +62,10 @@ const Footer = () => {
 
         {/* Solutions */}
         <div>
-          <h3 className="font-semibold mb-3">Solutions</h3>
+          <h3 className="font-semibold mb-3">Solutions </h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-blue-600 cursor-pointer">
-              For Employers
-            </li>
-            <li className="hover:text-blue-600 cursor-pointer">
-              For Candidates
-            </li>
+            <li><Link to="/employers">For Employers</Link></li>
+            <li><Link to="/candidates">For Candidates</Link></li>
           </ul>
         </div>
       </div>
@@ -72,9 +73,7 @@ const Footer = () => {
       {/* ================= OFFICES ================= */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-sm">
         <div>
-          <h3 className="font-semibold mb-2">
-            Corporate Office – Bengaluru
-          </h3>
+          <h3 className="font-semibold mb-2">Corporate Office – Bengaluru</h3>
           <p className="leading-6">
             Nexus, No.13 (Old No.614),<br />
             45th Cross, Marenahalli Road,<br />
@@ -109,7 +108,6 @@ const Footer = () => {
         <p>📧 reach@curatal.com</p>
         <p className="mt-1">📞 +91 63645 21909</p>
 
-        {/* ISO Logos */}
         <div className="flex items-center gap-4 mt-4">
           <img src={isoPortal1} alt="ISO 9001" className="h-12" />
           <img src={isoPortal2} alt="ISO 27001" className="h-12" />
@@ -117,12 +115,16 @@ const Footer = () => {
       </div>
 
       {/* ================= SOCIAL ICONS ================= */}
-      <div className="flex justify-center gap-6 mt-10 text-xl text-blue-600">
-        <FaWhatsapp className="cursor-pointer hover:scale-110 transition" />
-        <FaLinkedin className="cursor-pointer hover:scale-110 transition" />
-        <FaYoutube className="cursor-pointer hover:scale-110 transition" />
-        <FaFacebook className="cursor-pointer hover:scale-110 transition" />
-        <FaInstagram className="cursor-pointer hover:scale-110 transition" />
+      <div className="flex justify-center flex-wrap gap-6 mt-10 text-xl text-blue-600">
+        <FaWhatsapp />
+        <FaLinkedin />
+        <FaYoutube />
+        <FaFacebook />
+        <FaInstagram />
+        <FaXTwitter />
+        <FaQuora />
+        <FaMedium />
+        <FaReddit />
       </div>
 
       {/* ================= BOTTOM BAR ================= */}
@@ -131,7 +133,8 @@ const Footer = () => {
         <div className="flex justify-center gap-6 mt-2">
           <span className="cursor-pointer hover:text-blue-600">
             Privacy Policy
-          </span>
+          </span> 
+          <img src={whatsapplogo} alt="WhatsApp Logo" className="h-4 mt-1" />
           <span className="cursor-pointer hover:text-blue-600">
             Terms & Conditions
           </span>

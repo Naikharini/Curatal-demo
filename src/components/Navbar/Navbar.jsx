@@ -1,23 +1,82 @@
+import React from "react";
 import curatalLogo from "../../assets/curatalLogo.jpg";
 import chalcuratal from "../../assets/chalcuratal.jpg";
 
-
 const NavbarMenu = [
   { id: 1, title: "Find Talent", path: "/" },
-  { id: 2, title: "Solutions", path: "/" },
-  { id: 3, title: "Affiliates", path: "/" },
-  { id: 4, title: "Sign In", path: "/" },
-  { id: 5, title: "For Candidates", path: "/" },
- 
+
+  {
+    id: 2,
+    title: "Solutions",
+    dropdown: "mega",
+    sections: [
+      {
+        heading: "Database",
+        items: [
+          " Pre-Interviewed Candidates" ,
+          "AI-Interviewed Candidates",
+          "Un-Interviewed Candidates",
+        ],
+      },
+      {
+        heading: "Assessment",
+        items: ["Video Interviews", "Coding Assessment", "AI Assessment"],
+      },
+      {
+        heading: "Events",
+        items: [
+          "Diversity Hiring",
+          "Recruiting Events",
+          "Early Joiner Events",
+          "Women in Digital",
+        ],
+      },
+      {
+        heading: "Engage",
+        items: ["Hackathon", "Talent Pipe", "Club 50"],
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Affiliates",
+    dropdown: "simple",
+    items: [
+      "Interviewers",
+      "Mentors",
+      "Resume Writers",
+      "Coaching",
+      "Upskilling",
+      "Partners",
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Sign In",
+    dropdown: "simple",
+    items: [
+      "Employer",
+      "Candidate",
+      "Interviewers",
+      "Curatal Users",
+      "Coach",
+      "Mentor",
+    ],
+  },
+
+  { id: 5, title: "For Candidates", path: "Candidate/CandidateHome" },
+
 ];
 
 const Navbar = () => {
   return (
-    <nav className="w-full border-b bg-white">
+    <nav className="w-full bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        
+
         {/* Logo */}
-        <div className="flex items-center gap-1">
+        <div className="flex items-center">
           <img
             src={curatalLogo}
             alt="Curatal Logo"
@@ -25,16 +84,59 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Center Menu */}
-        <ul className="hidden md:flex items-center gap-8 text-blue-900 font-medium">
+        {/* Menu */}
+        <ul className="hidden md:flex items-center gap-8 text-blue-900 font-medium relative">
           {NavbarMenu.map((menu) => (
-            <li key={menu.id}>
-              <a
-                href={menu.path}
-                className="hover:text-blue-600 transition"
-              >
+            <li key={menu.id} className="relative group cursor-pointer">
+              
+              <span className="hover:text-blue-600 transition">
                 {menu.title}
-              </a>
+              </span>
+               
+               
+
+              {/* SIMPLE DROPDOWN */}
+              {menu.dropdown === "simple" && (
+                <div className="absolute left-0 top-10 hidden group-hover:block bg-white shadow-lg rounded-lg py-3 w-56 z-50">
+                  <ul className="text-sm text-gray-700">
+                    {menu.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="px-4 py-2 hover:bg-blue-50 hover:text-blue-600 flex items-center gap-2"
+                      >
+                        <span className="text-black">•</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* MEGA DROPDOWN */}
+              {menu.dropdown === "mega" && (
+                <div className="absolute left-[-200px] top-10 hidden group-hover:block bg-white shadow-xl rounded-xl p-6 w-[700px] z-50">
+                  <div className="grid grid-cols-4 gap-6">
+                    {menu.sections.map((section, index) => (
+                      <div key={index}>
+                        <h4 className="font-semibold text-blue-900 mb-3">
+                          {section.heading}
+                        </h4>
+                        <ul className="text-sm text-gray-700 space-y-2">
+                          {section.items.map((item, idx) => (
+                            <li
+                              key={idx}
+                              className="hover:text-blue-600 cursor-pointer"
+                            >
+                              <span className="text-black">•</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </li>
           ))}
         </ul>
@@ -43,7 +145,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <img
             src={chalcuratal}
-            alt="chalcuratal"
+            alt="Chal Curatal"
             className="h-10 object-contain"
           />
         </div>
