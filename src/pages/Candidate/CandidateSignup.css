@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.cs-wrapper {
+  min-height: 100vh;
+  background: #eef7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.cs-card {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* LEFT */
+.cs-left {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cs-left h1 {
+  font-size: 28px ;
+  font-family: "Sora", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px 0px 8px;
+  color: #1C1C1C;
+}
+
+.cs-left h3 {
+  font-size: 18px ;
+  font: sora;
+  margin-bottom: 0px 0px 8px;
+ color: #1C1C1C;
+ 
+}
+.cs-left h5 {
+  font-size: 12px ;
+  font-family: "Sora", sans-serif;
+  margin-bottom: 0px 0px 8px;
+ color: #1C1C1C;
+}
+
+.cs-subtext {
+  font-size: 14px;
+  color: #090a0a;
+  margin-bottom: 24px;
+
+}
+
+.cs-left input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+
+}
+
+/* PHONE */
+.cs-phone {
+  display: flex;
+  gap: 10px;
+
+}
+
+.cs-country {
+  width: 90px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PASSWORD */
+.cs-password {
+  position: relative;
+}
+
+
+.cs-password span {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6b7280;
+
+}
+
+/* GENDER */
+.cs-gender {
+  margin: 20px 0;
+
+}
+
+.cs-gender p {
+  font-size: 14px;
+  margin-bottom: 10px;
+
+}
+
+.cs-gender-options {
+  display: flex;
+  gap: 30px;
+
+}
+
+.cs-gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+}
+
+.cs-gender-options input {
+  display: none;
+}
+
+.cs-gender-options span {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #9ca3af;
+  border-radius: 50%;
+  position: relative;
+
+}
+
+.cs-gender-options input:checked + span {
+  border-color: #2563eb;
+
+}
+
+.cs-gender-options input:checked + span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+/* TERMS */
+.cs-terms {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.cs-terms a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* BUTTON */
+.cs-btn {
+  width: 100%;
+  padding: 14px;
+  background: #0a67b2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* SOCIAL */
+.cs-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin: 24px 0;
+}
+
+.cs-divider::before,
+.cs-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d1d5db;
+}
+
+.cs-divider::before {
+  margin-right: 12px;
+}
+
+.cs-divider::after {
+  margin-left: 12px;
+}
+
+
+.cs-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cs-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cs-login {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.cs-login a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* RIGHT */
+.cs-right {
+  background: linear-gradient(180deg, #05b2e9, #0a4dbf);
+  color: #fff;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cs-right h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cs-right p {
+  margin-bottom: 20px;
+  font-size: 28px ;
+  font:Sora bold;
+}
+
+.cs-right ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.cs-right li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;  
+}
+
+.cs-footer-text {
+  margin-top: 30px;
+  font-weight: 600;
+}
+.cs-footer-text a {
+  color: #fff;
+  text-decoration: underline;
+}

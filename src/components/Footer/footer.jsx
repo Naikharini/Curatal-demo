@@ -64,7 +64,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Solutions </h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/employers">For Employers</Link></li>
+            <li><Link to="/">For Employers</Link></li>
             <li><Link to="/candidates">For Candidates</Link></li>
           </ul>
         </div>
@@ -152,4 +152,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;   

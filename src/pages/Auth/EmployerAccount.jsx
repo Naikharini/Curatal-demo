@@ -7,53 +7,50 @@ const AuthHome = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-sky-50 py-16">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-
-        {/* LEFT CARD */}
-        <div className="bg-gradient-to-b from-sky-500 to-blue-700 text-white rounded-2xl p-10 shadow-lg">
-          <h2 className="text-3xl font-bold mb-4">
+    <div className="AuthHome">
+      <div className="auth-container">  
+        {/* LEFT PANEL */}
+        <div className="left-panel">
+          <h2>
             Create. Harness. <br /> Achieve. Lead.
           </h2>
-          <p className="mb-6">
+          <p className="intro-text">
             CHAL Curatal to streamline your tech hiring and get top-tier talent fast.
           </p>
-          <ul className="space-y-3 text-sm">
-            <li className="flex gap-2 items-start"><FaCheckCircle className="mt-1" /> Database offers pre-interviewed and AI-assessed candidates</li>
-            <li className="flex gap-2 items-start"><FaCheckCircle className="mt-1" /> Assessment includes video, coding, and AI-powered evaluations</li>
-            <li className="flex gap-2 items-start"><FaCheckCircle className="mt-1" /> Events focus on diversity, women empowerment, and immediate joiners</li>
-            <li className="flex gap-2 items-start"><FaCheckCircle className="mt-1" /> Engage delivers top-rated candidates through impactful hackathons</li>
-          </ul>
-          <p className="mt-6 font-semibold">Start your journey today and watch your team thrive!</p>
+          <ul>
+            <li><FaCheckCircle /> Database offers pre-interviewed and AI-assessed candidates</li>
+            <li><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
+            <li><FaCheckCircle /> Events focus on diversity,    women empowerment, and immediate joiners</li>
+            <li><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
+          </ul> 
+
+          <p className="footer-text">
+            Start your journey today and watch your team thrive!
+          </p>
         </div>
-
-        {/* RIGHT SIDE */}
-        <div>
-          <h1 className="text-3xl font-bold mb-8">Welcome to Curatal!</h1>
-
-          <div className="bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-xl p-6 mb-6 flex justify-between items-center shadow-md">
+        {/* RIGHT PANEL */}
+        <div className="right-panel">
+          <h1 class="MuiTypography-root MuiTypography-h1 text-center text-[24px] lg:text-4xl font-bold text-[rgba(0,0,0,1)] mb-[20px] css-7iv6c6">Welcome to Curatal!</h1>
+          <div className="auth-card">
             <div>
-              <h3 className="text-lg font-semibold">Let's Dive Back In!</h3>
-              <p className="text-sm">Sign in to access your employer account and continue your journey.</p>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">Let's Dive Back In!</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Sign in to access your employer account and continue your journey.</h6>
             </div>
-            <button className="bg-blue-700 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"
-              onClick={() => navigate("/auth/recruiter/login")}>
-              <FaUser /> Sign In
+              <FaUser /> 
+            <button onClick={() => navigate("/auth/recruiter/login")}>Sign In
+               </button>
+          </div>
+          <div className="auth-card light">
+            <div>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">New Here?</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Create an account to post jobs, manage applications, and hire top talent.</h6>
+            </div>
+            <FaUserPlus />
+            <button onClick={() => navigate("/auth/recruiter/signup")}>
+               Sign Up  
             </button>
           </div>
-
-          <div className="bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-xl p-6 flex justify-between items-center shadow-md">
-            <div>
-              <h3 className="text-lg font-semibold">New Here?</h3>
-              <p className="text-sm">Create an account to post jobs, manage applications, and hire top talent.</p>
-            </div>
-            <button className="bg-blue-700 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"
-              onClick={() => navigate("/auth/recruiter/signup")}>
-              <FaUserPlus /> Sign Up
-            </button>
-          </div>
         </div>
-
       </div>
     </div>
   );

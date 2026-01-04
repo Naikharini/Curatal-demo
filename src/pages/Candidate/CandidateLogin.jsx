@@ -1,23 +1,83 @@
+import React, { useState } from "react";
+import { FaEye, FaEyeSlash,FaCheckCircle } from "react-icons/fa";
+import "./CandidateLogin.css";
+
 const CandidateLogin = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
-    <div className="bg-white p-10 rounded-xl shadow-md w-full max-w-md">
-      <h2 className="text-2xl font-bold mb-6">Candidate Login</h2>
+    <div className="login-page">
+      <div className="login-card">
 
-      <input
-        type="email"
-        placeholder="Email"
-        className="w-full border p-3 rounded mb-4"
-      />
+        {/* LEFT INFO PANEL */}
+        <div className="login-left">
+          <h2>
+            Create. Harness.
+            <br />
+            Achieve. Lead.
+          </h2>
 
-      <input
-        type="password"
-        placeholder="Password"
-        className="w-full border p-3 rounded mb-6"
-      />
+          <p className="left-sub">
+            CHAL Curatal and take the leap towards your dream career!
+          </p>
 
-      <button className="w-full bg-blue-600 text-white py-3 rounded font-semibold">
-        Sign In
-      </button>
+          <ul className="space-y-3">
+                      <li className="flex gap-2"><FaCheckCircle /> Build a standout resume with customizable templates</li>
+                      <li className="flex gap-2"><FaCheckCircle /> Get matched with jobs tailored to your skills</li>
+                      <li className="flex gap-2"><FaCheckCircle /> Know your worth with the Salary Predictor</li>
+                      <li className="flex gap-2"><FaCheckCircle /> Ace interviews with expert-led mock sessions</li>
+                      <li className="flex gap-2"><FaCheckCircle /> Get assessed, receive personalized insights, and grow with Curatal</li>
+                    </ul>
+
+          <p className="left-footer">
+            Start your journey today and watch your team thrive!
+          </p>
+        </div>
+
+        {/* RIGHT LOGIN FORM */}
+        <div className="login-right">
+          <h1 class="mb-2 text-header text-center text-heading font-bold ">Welcome Back!</h1>
+          <h3 class="mb-2 text-lg text-center text-heading font-bold ">For Candidate</h3>
+          <h5 class="mb-5 text-xs text-center text-[rgba(0, 0, 0, 0.75)]  font-normal ">Your next opportunity is just a login away!</h5>
+
+          <input
+            type="email"
+            placeholder="Email address"
+            className="input"
+          />
+
+          <div className="password-box">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              className="input"
+            />
+            <span onClick={() => setShowPassword(!showPassword)}>
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
+          </div>
+
+          <div className="forgot">Forgot Password?</div>
+
+          <button className="signin-btn">Sign In</button>
+
+          <div className="divider">
+            <span></span>
+            <p>Or Continue with</p>
+            <span></span>
+          </div>
+
+          <div className="social">
+            <div className="icon  linkedin">in</div>
+            <div className="icon google">G</div>
+          </div>
+
+          <p className="signup-text">
+            <h3 class="mt-5  w-full flex-2 text-xs text-center font-medium ">Not On Curatal? <span class="text-secondary font-medium"><a href="/auth/signup" data-faitracker-click-bind="true">Sign up!</a></span></h3>
+          </p>
+        </div>
+
+      </div>
     </div>
   );
 };

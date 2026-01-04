@@ -167,13 +167,13 @@ const EmployerSignup = () => {
             CHAL Curatal to streamline your tech hiring and get top-tier talent fast.
           </p>
 
-          <ul>
-                      <li><FaCheckCircle />Database offers pre-interviewed and AI-assessed candidates</li>
-                      <li><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
-                      <li><FaCheckCircle /> Events focus on diversity, women empowerment, and immediate joiners</li>
-                      <li><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
-                    </ul>
-
+         <ul>
+                     <li><FaCheckCircle />Database offers pre-interviewed and AI-assessed candidates</li>
+                     <li><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
+                     <li><FaCheckCircle /> Events focus on diversity, women empowerment, and immediate joiners</li>
+                     <li><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
+                   </ul>
+         
           <p className="mt-6 font-semibold">
             Start your journey today and watch your team thrive!
           </p>

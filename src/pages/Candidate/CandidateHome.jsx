@@ -1,88 +1,60 @@
 import { useNavigate } from "react-router-dom";
-import { FaCheckCircle, FaUserPlus, FaSignInAlt } from "react-icons/fa";
-
+import { FaCheckCircle, FaUserPlus, FaUser } from "react-icons/fa";
+import "./CandidateHome.css";
 const CandidateHome = () => {
-  const navigate = useNavigate();
-
+  const navigate = useNavigate(); 
   return (
-    <div className="bg-[#f5fbff] p-10 rounded-2xl w-full max-w-6xl grid md:grid-cols-2 gap-10">
-
-      {/* LEFT BLUE CARD */}
-      <div className="bg-gradient-to-b from-sky-500 to-blue-700 text-white rounded-2xl p-10">
-        <h2 className="text-3xl font-bold mb-4">
-          Create. Harness. <br /> Achieve. Lead.
-        </h2>
-
-        <p className="mb-6">
-          CHAL Curatal and take the leap towards your dream career!
-        </p>
-
-        <ul className="space-y-4 text-sm">
-          <li className="flex gap-2">
-            <FaCheckCircle /> Build a standout resume with customizable templates
-          </li>
-          <li className="flex gap-2">
-            <FaCheckCircle /> Get matched with jobs tailored to your skills
-          </li>
-          <li className="flex gap-2">
-            <FaCheckCircle /> Know your worth with the Salary Predictor
-          </li>
-          <li className="flex gap-2">
-            <FaCheckCircle /> Ace interviews with expert-led mock sessions
-          </li>
-          <li className="flex gap-2">
-            <FaCheckCircle /> Get assessed and receive personalized insights
-          </li>
-        </ul>
-
-        <p className="mt-6 font-semibold">
-          Start your journey today and watch your career thrive!
-        </p>
-      </div>
-
-      {/* RIGHT SIDE */}
-      <div>
-        <h1 className="text-3xl font-bold mb-8">
-          Welcome to Curatal!
-        </h1>
-
-        {/* SIGN IN */}
-        <div className="bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-xl p-6 mb-6 flex justify-between items-center">
-          <div>
-            <h3 className="text-lg font-semibold">Let's Dive Back In!</h3>
-            <p className="text-sm">
-              Sign in to access your candidate account.
-            </p>
-          </div>
-          <button
-            onClick={() => navigate("/auth/candidate/login")}
-            className="bg-blue-700 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"
-          >
-            <FaSignInAlt /> Sign In
-          </button>
+    <div className="AuthHome">
+      <div className="auth-container">
+        {/* LEFT PANEL */}
+        <div className="left-panel">
+          <h2>
+            Create. Harness. <br /> Achieve. Lead.
+          </h2>
+          <p className="intro-text">
+            CHAL Curatal and take the leap towards your dream career!
+          </p>
+          <ul>
+            <li><FaCheckCircle /> Build a standout resume with customizable templates</li>
+            <li><FaCheckCircle /> Get matched with jobs tailored to your skills</li>
+            <li><FaCheckCircle /> Know your worth with the Salary Predictor</li>
+            <li><FaCheckCircle /> Ace interviews with expert-led mock sessions</li>
+            <li><FaCheckCircle /> Get assessed, receive personalized insights, and grow with Curatal</li>
+          </ul> 
+          <p className="footer-text">
+            Start your journey today and watch your team thrive!
+          </p>
         </div>
+        {/* RIGHT PANEL */}
+        <div className="right-panel">
+          <h1 class="MuiTypography-root MuiTypography-h1 text-center text-[24px] lg:text-4xl font-bold text-[rgba(0,0,0,1)] mb-[20px] css-7iv6c6">Welcome to Curatal!</h1>
+          <div className="auth-card">
+            <div>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">Let's Dive Back In!</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Sign in to access your candidate account and  continue your journey.</h6>
+            </div>
 
-        {/* SIGN UP */}
-        <div className="bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-xl p-6 flex justify-between items-center">
-          <div>
-            <h3 className="text-lg font-semibold">Or Continue with</h3>
-          
-            <h3 className="text-lg font-semibold">New Here?</h3>
-            <p className="text-sm">
-              Create your account and explore opportunities.
-            </p>
+              <FaUser />
+            <button onClick={() => navigate("/auth/candidate/login")}>Sign In
+              
+            </button>
           </div>
-          <button
-            onClick={() => navigate("/auth/candidate/signup")}
-            className="bg-blue-700 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"
-          >
-            <FaUserPlus /> Sign Up
-          </button>
+          <div className="auth-card light">
+            <div>
+             <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">New Here?</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Create an account to explore exclusive candidate features and opportunities.</h6>
+            </div>
+            <FaUserPlus />
+            <button onClick={() => navigate("/auth/candidate/signup")}>
+               Sign Up  
+            </button>
+          </div>
         </div>
       </div>
-
     </div>
   );
-};
-
+}
 export default CandidateHome;
+ 
+
+

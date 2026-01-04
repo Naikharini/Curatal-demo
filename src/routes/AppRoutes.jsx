@@ -3,7 +3,7 @@ import AuthHome from "../pages/Home/AuthHome";
 import EmployerAccount from "../pages/Auth/EmployerAccount";
 import EmployerLogin from "../pages/Auth/EmployerLogin";
 import EmployerSignup from "../pages/Auth/EmployerSignup";
-import AuthLayout from "../layouts/AuthLayout";
+import AuthLayout from "../layouts/AuthLayout";     
 //  for Candidatate
 
 import CandidateHome from "../pages/Candidate/CandidateHome";
@@ -32,7 +32,7 @@ const AppRoutes = () => {
       <Route path="/" element={<AuthHome />} />
 
       {/* Catch-all */}
-      <Route path="*" element={<Navigate to="/" replace />} />
+      {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
     </Routes>
   );
 };

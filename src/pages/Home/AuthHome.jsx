@@ -34,27 +34,26 @@ const AuthHome = () => {
 
         {/* RIGHT PANEL */}
         <div className="right-panel">
-          <h1>Welcome to Curatal!</h1>
-
+          <h1 class="MuiTypography-root MuiTypography-h1 text-center text-[24px] lg:text-4xl font-bold text-[rgba(0,0,0,1)] mb-[20px] css-7iv6c6">Welcome to Curatal!</h1>
           <div className="auth-card">
             <div>
-              <h3>Let’s Dive Back In!</h3>
-              <p>Sign in to access your employer account.</p>
+             <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">Let's Dive Back In!</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Sign in to access your employer account and continue your journey.</h6>
             </div>
-
-            <button onClick={() => navigate("/auth/recruiter/login")}>
-              <FaUser /> Sign In
+              <FaUser /> 
+            <button onClick={() => navigate("/auth/recruiter/login")}>Sign In
+              
             </button>
           </div>
 
           <div className="auth-card light">
             <div>
-              <h3>New Here?</h3>
-              <p>Create an account to post jobs and manage applications.</p>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">New Here?</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Create an account to post jobs, manage applications, and hire top talent.</h6>
             </div>
-
+            <FaUserPlus />
             <button onClick={() => navigate("/auth/recruiter/signup")}>
-              <FaUserPlus /> Sign Up
+               Sign Up
             </button>
           </div>
         </div>
