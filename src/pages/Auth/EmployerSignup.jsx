@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash,FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import "./EmployerSignup.css";
 
 const EmployerSignup = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ const EmployerSignup = () => {
         <div className="p-10">
           <h1 className="text-2xl font-bold mb-2">Welcome to Curatal</h1>
           <p className="text-gray-600 mb-6">For Employer</p>
+          <h3 className="text-gray-600 mb-6">Find top talent in just a few clicks!</h3>
 
           <p className="text-red-500 text-sm mb-4">
             * All fields are mandatory
@@ -165,12 +167,12 @@ const EmployerSignup = () => {
             CHAL Curatal to streamline your tech hiring and get top-tier talent fast.
           </p>
 
-          <ul className="space-y-3 text-sm">
-            <li>⭐ Database offers pre-interviewed and AI-assessed candidates</li>
-            <li>⭐ Assessment includes video, coding, and AI-powered evaluations</li>
-            <li>⭐ Events focus on diversity, women empowerment, and immediate joiners</li>
-            <li>⭐ Engage delivers top-rated candidates through impactful hackathons</li>
-          </ul>
+          <ul>
+                      <li><FaCheckCircle />Database offers pre-interviewed and AI-assessed candidates</li>
+                      <li><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
+                      <li><FaCheckCircle /> Events focus on diversity, women empowerment, and immediate joiners</li>
+                      <li><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
+                    </ul>
 
           <p className="mt-6 font-semibold">
             Start your journey today and watch your team thrive!

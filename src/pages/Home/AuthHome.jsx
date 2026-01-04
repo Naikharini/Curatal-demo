@@ -21,10 +21,10 @@ const AuthHome = () => {
           </p>
 
           <ul>
-            <li><FaCheckCircle /> Pre-interviewed & AI-assessed candidates</li>
-            <li><FaCheckCircle /> Video, coding & AI evaluations</li>
-            <li><FaCheckCircle /> Diversity & early-joiner hiring events</li>
-            <li><FaCheckCircle /> Hackathons & curated talent pools</li>
+            <li><FaCheckCircle /> Database offers pre-interviewed and AI-assessed candidates</li>
+            <li><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
+            <li><FaCheckCircle /> Events focus on diversity, women empowerment, and immediate joiners</li>
+            <li><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
           </ul>
 
           <p className="footer-text">
