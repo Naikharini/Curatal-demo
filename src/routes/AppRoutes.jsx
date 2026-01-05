@@ -3,7 +3,8 @@ import AuthHome from "../pages/Home/AuthHome";
 import EmployerAccount from "../pages/Auth/EmployerAccount";
 import EmployerLogin from "../pages/Auth/EmployerLogin";
 import EmployerSignup from "../pages/Auth/EmployerSignup";
-import AuthLayout from "../layouts/AuthLayout";     
+import AuthLayout from "../layouts/AuthLayout";  
+import { FaUser, FaUserPlus } from "react-icons/fa";     
 //  for Candidatate
 
 import CandidateHome from "../pages/Candidate/CandidateHome";
