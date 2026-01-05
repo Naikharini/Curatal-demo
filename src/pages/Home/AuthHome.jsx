@@ -48,8 +48,8 @@ const AuthHome = () => {
 
           <div className="auth-card light">
             <div>
-              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">New Here?</h6>
-              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Create an account to post jobs, manage applications, and hire top talent.</h6>
+              <h3>New Here?</h3>
+              <p>Create an account to post jobs and manage applications.</p>
             </div>
             <FaUserPlus />
             <button onClick={() => navigate("/auth/recruiter/signup")}>
