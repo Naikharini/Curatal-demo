@@ -1,9 +1,14 @@
 .AuthHome {
-  background: #f2f9ff;
-  padding: 20px 20px 20p x 20px;
+ background: #f2f9ff;
+  padding: 20px 20px 20px 20px;
   border: none;
   margin: 0px 0px 0px 0px;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+
 }
 
 .auth-container {
