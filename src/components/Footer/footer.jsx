@@ -3,7 +3,7 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 import isoPortal1 from "../../assets/isoPortal1.png";
 import isoPortal2 from "../../assets/isoPortal2.png";
-import whatsapplogo from "../../assets/whatsapplogo.png"; 
+import whatsapplogo from "../../assets/whatsapplogo.png";     
 import {
   FaWhatsapp,
   FaLinkedin,
@@ -150,7 +150,7 @@ const Footer = () => {
       <div>
       <div className="h-100vh" style={{ position: 'fixed', bottom: '120px', right: '21px', zIndex: '100' }}>
         <a href="https://api.whatsapp.com/send?;text=" rel="noopener noreferrer nofollow external sponsored ugc" target="_blank" data-faitracker-click-bind="true">
-          <img src="/src/assets/whatsapplogo.png" width="50px" height="50px" />
+          <img src="../../assets/whatsapplogo.png" width="50px" height="50px" />
         </a>
       </div>
       </div>
