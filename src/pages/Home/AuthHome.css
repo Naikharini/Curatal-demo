@@ -64,30 +64,41 @@
 .right-panel h1 {
   font-size: 32px;
   margin-bottom: 30px;
+  
 }
 
 /* AUTH CARDS */
 .auth-card {
   background: linear-gradient(90deg, #00b4eb, #48cae4);
+  width: 500px;
+  height: 130px;
   color: #fff;
-  border-radius: 14px;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
   padding: 20px 20px 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  transition: duration 300ms;
+  animation: smartAnimation 300ms ease-in-out;
 }
 
 .auth-card.light {
   background: linear-gradient(90deg, #00b4eb, #48cae4);
+
 }
 
 .auth-card h3 {
   margin-bottom: 6px;
+
 }
 
 .auth-card p {
   font-size: 14px;
+  margin-bottom: 12px;
+
 }
 
 .auth-card button {
@@ -105,11 +116,15 @@
 
 .auth-card button:hover {
   background: #023e8a;
+  transition: background 200ms;
+
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .auth-container {
     grid-template-columns: 1fr;
+    padding: 20px;
+
   }
 }

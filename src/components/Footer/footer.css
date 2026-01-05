@@ -2,19 +2,22 @@
   background: #f9fbfd;
   color: #374151;
   font-family: "Inter", sans-serif;
+  padding-top: 40px;
+
 }
 
 .footer-container {
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
+
 }
 
 /* GRID */
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+    gap: 40px;
 }
 
 .footer h4 {
@@ -22,39 +25,60 @@
   font-weight: 600;
   margin-bottom: 12px;
   color: #111827;
+  transition: color 0.3s;
+
 }
 
 .footer p,
 .footer li {
   font-size: 14px;
   line-height: 1.6;
+  color: #4b5563;
+  transition: color 0.3s;
+
 }
 
 .footer ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+
 }
 
 .footer li {
   margin-bottom: 8px;
   cursor: pointer;
+  transition: color 0.3s;
+
 }
 
 .footer li:hover {
   color: #2563eb;
+
 }
 
 .bold {
   font-weight: 600;
+  transition: color 0.3s;
+
 }
 
 /* CONTACT */
 .footer-contact {
   border-top: 1px solid #e5e7eb;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  transition: color 0.3s;
+}
+.footer-contact p {
+  margin: 4px 0;
 }
 
 .certifications {
   margin-top: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .certifications img {
@@ -70,10 +94,12 @@
   font-size: 20px;
   color: #2563eb;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .footer-social svg {
   cursor: pointer;
+  transition: color 0.3s;
 }
 
 .footer-social svg:hover {
@@ -86,6 +112,8 @@
   text-align: center;
   padding: 16px 0;
   font-size: 13px;
+  color: #6b7280;
+  margin-top: 20px;
 }
 
 .footer-bottom div {
@@ -98,6 +126,7 @@
 
 .footer-bottom span {
   cursor: pointer;
+  transition: color 0.3s;
 }
 
 .footer-bottom span:hover {
@@ -106,6 +135,7 @@
 
 .footer-bottom img {
   height: 14px;
+
 }
 
 /* SCROLL TOP */
@@ -120,35 +150,46 @@
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+
 }
 
 .scroll-top:hover {
   background: #1d4ed8;
+
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
   }
 }
 
 @media (max-width: 600px) {
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 .footer a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s;
+
 }
 
 .footer a:hover {
   color: #2563eb;
+
 }
 .footer h3 {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 12px;
   color: #111827;
+  transition: color 0.3s;
+
 }

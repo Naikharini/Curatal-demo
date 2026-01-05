@@ -64,8 +64,8 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Solutions </h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/">For Employers</Link></li>
-            <li><Link to="/candidates">For Candidates</Link></li>
+            <li className="hover:text-blue-600 cursor-pointer"><Link to="/">For Employers</Link></li>
+            <li className="hover:text-blue-600 cursor-pointer"><Link to="/candidates">For Candidates</Link></li>
           </ul>
         </div>
       </div>
@@ -132,12 +132,11 @@ const Footer = () => {
         <p>© 2025 Curatal. All rights reserved.</p>
         <div className="flex justify-center gap-6 mt-2">
           <span className="cursor-pointer hover:text-blue-600">
-            Privacy Policy
-          </span> 
-          <img src={whatsapplogo} alt="WhatsApp Logo" className="h-4 mt-1" />
+            Privacy Policy          </span> 
           <span className="cursor-pointer hover:text-blue-600">
             Terms & Conditions
           </span>
+      
         </div>
       </div>
 
@@ -148,6 +147,15 @@ const Footer = () => {
       >
         <FaArrowUp />
       </button>
+      <div>
+      <div className="h-100vh" style={{ position: 'fixed', bottom: '120px', right: '21px', zIndex: '100' }}>
+        <a href="https://api.whatsapp.com/send?;text=" rel="noopener noreferrer nofollow external sponsored ugc" target="_blank" data-faitracker-click-bind="true">
+          <img src="/src/assets/whatsapplogo.png" width="50px" height="50px" />
+        </a>
+      </div>
+      </div>
+
+      <div className="rc-anchor-normal-footer"><div className="rc-anchor-logo-large" role="presentation"><div className="rc-anchor-logo-img rc-anchor-logo-img-large"></div></div><div className="rc-anchor-pt"><a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy</a><span aria-hidden="true" role="presentation"> - </span><a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a></div></div>
     </footer>
   );
 };
