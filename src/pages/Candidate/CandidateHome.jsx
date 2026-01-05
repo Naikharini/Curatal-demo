@@ -31,23 +31,24 @@ const CandidateHome = () => {
           <div className="auth-card">
             <div>
               <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">Let's Dive Back In!</h6>
-              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Sign in to access your candidate account and  continue your journey.</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn max-w-[350px]">Sign in to access your candidate account and  continue your journey.</h6>
             </div>
 
-              <FaUser />
-            <button onClick={() => navigate("/auth/candidate/login")}>Sign In
-              
-            </button>
+             <div onClick={() => navigate("/auth/candidate/login")} className="flex flex-col bg-[#0077b6] p-2 rounded-md width-[150px] text-white cursor-pointer justify-center items-center">
+                          <FaUser />
+                          Sign In
+                        </div>
           </div>
           <div className="auth-card light">
             <div>
              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">New Here?</h6>
-              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Create an account to explore exclusive candidate features and opportunities.</h6>
+              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn max-w-[350px]">Create an account to explore exclusive candidate features and opportunities.</h6>
             </div>
-            <FaUserPlus />
-            <button onClick={() => navigate("/auth/candidate/signup")}>
-               Sign Up  
-            </button>
+            
+            <div onClick={() => navigate("/auth/candidate/signup")} className="flex flex-col bg-[#0077b6] p-2 rounded-md width-[150px] text-white cursor-pointer justify-center items-center">
+              <FaUserPlus />
+              Sign Up
+            </div>
           </div>
         </div>
       </div>

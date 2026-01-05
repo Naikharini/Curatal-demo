@@ -64,8 +64,8 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Solutions </h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-blue-600 cursor-pointer"><Link to="/">For Employers</Link></li>
-            <li className="hover:text-blue-600 cursor-pointer"><Link to="/candidates">For Candidates</Link></li>
+            <li className="hover:text-blue-600 cursor-pointer"><Link to="/auth/recruiter/account">For Employers</Link></li>
+            <li className="hover:text-blue-600 cursor-pointer"><Link to="/auth/candidate/home">For Candidates</Link></li>
           </ul>
         </div>
       </div>

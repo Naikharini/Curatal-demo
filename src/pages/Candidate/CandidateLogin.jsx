@@ -75,7 +75,7 @@ const CandidateLogin = () => {
           <p className="signup-text">
             <h3 class="mt-5  w-full flex-2 text-xs text-center font-medium ">Not On Curatal? 
               <span class="text-secondary font-medium">
-                <a href="/Candidate/signup" data-faitracker-click-bind="true">Sign up!</a>
+                <a href="/auth/candidate/signup" data-faitracker-click-bind="true">Sign up!</a>
               
                 </span></h3>
           </p>

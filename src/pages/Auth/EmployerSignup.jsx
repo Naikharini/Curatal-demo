@@ -168,10 +168,10 @@ const EmployerSignup = () => {
           </p>
 
          <ul>
-                     <li><FaCheckCircle />Database offers pre-interviewed and AI-assessed candidates</li>
-                     <li><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
-                     <li><FaCheckCircle /> Events focus on diversity, women empowerment, and immediate joiners</li>
-                     <li><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
+                     <li className="flex align-center gap-1"><FaCheckCircle />Database offers pre-interviewed and AI-assessed candidates</li>
+                     <li className="flex align-center gap-1"><FaCheckCircle /> Assessment includes video, coding, and AI-powered evaluations</li>
+                     <li className="flex align-center gap-1"><FaCheckCircle /> Events focus on diversity, women empowerment, and immediate joiners</li>
+                     <li className="flex align-center gap-1"><FaCheckCircle /> Engage delivers top-rated candidates through impactful hackathons</li>
                    </ul>
          
           <p className="mt-6 font-semibold">
