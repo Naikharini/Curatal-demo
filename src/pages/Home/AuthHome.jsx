@@ -38,12 +38,13 @@ const AuthHome = () => {
           <div className="auth-card">
             <div>
              <h6 class="MuiTypography-root MuiTypography-subtitle1 title css-13t71z3">Let's Dive Back In!</h6>
-              <h6 class="MuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn">Sign in to access your employer account and continue your journey.</h6>
+              <h6 class="MMuiTypography-root MuiTypography-subtitle1 desc css-1g1l3fn max-w-[350px]">Sign in to access your employer account and continue your journey.</h6>
             </div>
-              <FaUser /> 
-            <button onClick={() => navigate("/auth/recruiter/login")}>Sign In
-              
-            </button>
+              <div onClick={() => navigate("/auth/recruiter/login")} className="flex flex-col bg-[#0077b6] p-2 rounded-md width-[150px] text-white cursor-pointer justify-center items-center">
+                            <FaUser />
+                            Sign In
+                          </div>
+
           </div>
 
           <div className="auth-card light">
@@ -51,10 +52,10 @@ const AuthHome = () => {
               <h3>New Here?</h3>
               <p>Create an account to post jobs and manage applications.</p>
             </div>
-            <FaUserPlus />
-            <button onClick={() => navigate("/auth/recruiter/signup")}>
-               Sign Up
-            </button>
+            <div onClick={() => navigate("/auth/recruiter/signup")} className="flex flex-col bg-[#0077b6] p-2 rounded-md width-[150px] text-white cursor-pointer justify-center items-center">
+                          <FaUserPlus />
+                          Sign Up
+                        </div>
           </div>
         </div>
 
