@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash,FaCheckCircle } from "react-icons/fa";
 import "./CandidateLogin.css";
+import { useNavigate } from "react-router-dom";
 
 const CandidateLogin = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -74,10 +76,14 @@ const CandidateLogin = () => {
 
           <p className="signup-text">
             <h3 class="mt-5  w-full flex-2 text-xs text-center font-medium ">Not On Curatal? 
-              <span class="text-secondary font-medium">
-                <a href="/auth/candidate/signup" data-faitracker-click-bind="true">Sign up!</a>
+              <p className="signup-text">
+              Not on Curatal?{" "}
+              <span onClick={() => navigate("/auth/recruiter/signup")}>
+                Sign Up
+              </span>
+            </p>
+            </h3>
               
-                </span></h3>
           </p>
         </div>
 
