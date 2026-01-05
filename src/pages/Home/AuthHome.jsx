@@ -50,7 +50,7 @@ const AuthHome = () => {
           <div className="auth-card light">
             <div>
               <h3>New Here?</h3>
-              <p>Create an account to post jobs and manage applications.</p>
+              <p>Create an account to post jobs, manage applications, and hire top talent.</p>
             </div>
             <div onClick={() => navigate("/auth/recruiter/signup")} className="flex flex-col bg-[#0077b6] p-2 rounded-md width-[150px] text-white cursor-pointer justify-center items-center">
                           <FaUserPlus />
