@@ -75,14 +75,14 @@ const CandidateLogin = () => {
           </div>
 
           <p className="signup-text">
-            <h3 class="mt-5  w-full flex-2 text-xs text-center font-medium ">Not On Curatal? 
+          
               <p className="signup-text">
               Not on Curatal?{" "}
               <span onClick={() => navigate("/auth/recruiter/signup")}>
                 Sign Up
               </span>
             </p>
-            </h3>
+    
               
           </p>
         </div>
