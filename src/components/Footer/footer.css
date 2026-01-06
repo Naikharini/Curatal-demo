@@ -1,8 +1,9 @@
 .footer {
-  background: #f9fbfd;
+  background: rgb(229, 247, 255);
   color: #374151;
   font-family: "Inter", sans-serif;
   padding-top: 40px;
+  transition: background 0.3s, color 0.3s;
 
 }
 
